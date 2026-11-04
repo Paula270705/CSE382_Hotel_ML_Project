@@ -1,0 +1,32 @@
+Source_Variable,Task_A_Regression_Role,Task_B_Classification_Role,Task_C_Clustering_Role,Lifecycle_Timing,Leakage_Classification
+IsCanceled,Excluded (Post-booking outcome),Target Variable,Excluded (Supervised outcome),Post-booking outcome,Direct Target / Outcome Leak
+ADR,Target Variable,Included (Valid t0 pricing),Included (Behavioral price tier),At booking creation (t0),Target in Task A / Safe in B & C
+ReservationStatus,Excluded (Direct leak),Excluded (100% Direct leak of IsCanceled),Excluded (Outcome label),Final reservation state,Direct Target Leak
+ReservationStatusDate,Excluded (Direct leak),Excluded (Timestamp of cancellation/check-out),Excluded (Outcome timestamp),Final reservation state,Direct Temporal Leak
+AssignedRoomType,Excluded (Assigned at check-in),Excluded (Indirect check-in reassignment leak),Excluded (Operational mutation),Check-in / Operations,Indirect Lifecycle Leak
+BookingChanges,Excluded (Accumulates post-t0),Excluded in strict t0 (Lifecycle mutation),Excluded (Operational count),Post-booking amendments,Indirect Lifecycle Leak
+DaysInWaitingList,Excluded (Resolved post-wait),Excluded in strict t0 (Lifecycle wait),Excluded (Operational queue),Post-booking confirmation,Indirect Lifecycle Leak
+LeadTime,Included,Included,Included,At booking creation (t0),Safe at t0
+ArrivalDateYear,Included,Included,Excluded (Calendar ID),At booking creation (t0),Safe at t0
+ArrivalDateMonth,Included,Included,Included (Seasonality),At booking creation (t0),Safe at t0
+ArrivalDateWeekNumber,Included,Included,Excluded (Redundant with Month),At booking creation (t0),Safe at t0
+ArrivalDateDayOfMonth,Included,Included,Excluded (Noise in clustering),At booking creation (t0),Safe at t0
+StaysInWeekendNights,Included,Included,Included,At booking creation (t0),Safe at t0
+StaysInWeekNights,Included,Included,Included,At booking creation (t0),Safe at t0
+Adults,Included,Included,Included,At booking creation (t0),Safe at t0
+Children,Included,Included,Included,At booking creation (t0),Safe at t0
+Babies,Included,Included,Included,At booking creation (t0),Safe at t0
+Meal,Included,Included,Included,At booking creation (t0),Safe at t0
+Country,Included (OOF Target Encoded),Included (OOF Target Encoded),Excluded (High cardinality),At booking creation (t0),Safe at t0 (Requires regularization)
+MarketSegment,Included,Included,Included,At booking creation (t0),Safe at t0
+DistributionChannel,Included,Included,Included,At booking creation (t0),Safe at t0
+IsRepeatedGuest,Included,Included,Included,At booking creation (t0),Safe at t0
+PreviousCancellations,Included,Included,Included,At booking creation (t0),Safe at t0
+PreviousBookingsNotCanceled,Included,Included,Included,At booking creation (t0),Safe at t0
+ReservedRoomType,Included,Included,Included,At booking creation (t0),Safe at t0
+DepositType,Included,Included (Audited high-signal contract),Included,At booking creation (t0),Safe at t0
+Agent,Included (OOF Target + HasAgent),Included (OOF Target + HasAgent),Replaced by HasAgent indicator,At booking creation (t0),Safe at t0 (ID requires encoding)
+Company,Included (OOF Target + HasCompany),Included (OOF Target + HasCompany),Replaced by HasCompany indicator,At booking creation (t0),Safe at t0 (ID requires encoding)
+CustomerType,Included,Included,Included,At booking creation (t0),Safe at t0
+RequiredCarParkingSpaces,Included,Included,Included,At booking creation (t0),Safe at t0
+TotalOfSpecialRequests,Included,Included,Included,At booking creation (t0),Safe at t0

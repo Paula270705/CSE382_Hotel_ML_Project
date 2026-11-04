@@ -1,0 +1,7 @@
+Task,Algorithm_Name,Stage,Dataset_Scope,Num_Clusters,Silhouette_Score,Davies_Bouldin_Index,Calinski_Harabasz_Index,Runtime_Sec
+Task C - Clustering,B1_KMeans_Baseline_k3_Random,Baseline,Full,3,0.1107,2.458,4585.0,0.07
+Task C - Clustering,O1_KMeans_Optimized_KMeansPP,Optimized,Full,2,0.9037,0.5062,19658.9,0.57
+Task C - Clustering,B2_Agglomerative_Baseline_Single,Baseline,Subsample_10k,3,0.8531,0.2442,306.5,1.91
+Task C - Clustering,O2_Agglomerative_Optimized_Ward,Optimized,Subsample_10k,2,0.8033,0.7939,2500.7,4.35
+Task C - Clustering,B3_GMM_Baseline_Spherical,Baseline,Full,3,0.1047,2.788,4364.5,0.26
+Task C - Clustering,O3_GMM_Optimized_FullCov,Optimized,Full,2,0.1614,2.659,3936.3,0.57

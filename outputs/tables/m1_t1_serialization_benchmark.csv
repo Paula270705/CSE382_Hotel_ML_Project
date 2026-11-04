@@ -1,0 +1,7 @@
+Task_ID,Model_Name,Role,Target_Task,Primary_Metric,Metric_Value,Load_Latency_ms,Max_Serialization_Parity_Error
+M1-T1,B1_DummyRegressor,Baseline,regression,Val_RMSE,37.1259,1.88,0.0
+M1-T1,B2_DummyClassifier,Baseline,classification,Val_ROC_AUC,0.5007,2.01,0.0
+M1-T1,B3_MiniBatchKMeans_Random,Baseline,clustering,Train_Inertia,110462754.3785,2.52,0.0
+M1-T1,O1_Ridge_LogTarget_Pipeline,Optimized,regression,Val_RMSE,29.3487,6.63,0.0
+M1-T1,O2_Calibrated_LogReg_Pipeline,Optimized,classification,Val_ROC_AUC,0.7813,5.87,0.0
+M1-T1,O3_MiniBatchKMeans_KMeansPP_Pipeline,Optimized,clustering,Train_Inertia,695334.3821,2.23,0.0

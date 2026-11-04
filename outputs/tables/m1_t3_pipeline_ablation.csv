@@ -1,0 +1,7 @@
+Task_ID,Model,Role,Metric,Score
+M1-T3,B1_SGDRegressor_Naive_Full_OHE,Baseline,CV_RMSE,20.1732
+M1-T3,O1_SGDRegressor_OOF_TargetEnc_Engineered,Optimized,CV_RMSE,4478342699491.219
+M1-T3,B2_LogReg_Naive_OHE_NoFeatureEng,Baseline,CV_F1,0.7694
+M1-T3,O2_LogReg_OOF_TargetEnc_Engineered,Optimized,CV_F1,0.7705
+M1-T3,B3_DecisionTree_WITH_Lifecycle_Leakage,Baseline (Leaky Reference),CV_ROC_AUC,0.8722
+M1-T3,O3_DecisionTree_Strict_t0_LeakFree_Pruned,Optimized (Leak-Free),CV_ROC_AUC,0.913

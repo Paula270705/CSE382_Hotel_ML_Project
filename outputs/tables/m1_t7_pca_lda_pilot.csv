@@ -1,0 +1,7 @@
+Task_ID,Model,Role,Metric,Score
+M1-T7,B1_KNNRegressor_NoPCA_Uniform,Baseline,CV_RMSE,22.9705
+M1-T7,O1_KNNRegressor_PCA95_Whitened_Distance,Optimized,CV_RMSE,34.1517
+M1-T7,B2_KNNClassifier_Naive_PCA2,Baseline,CV_ROC_AUC,0.7216
+M1-T7,O2_KNNClassifier_PCA95_Plus_SVD_LDA,Optimized,CV_ROC_AUC,0.8989
+M1-T7,B3_LogReg_Unregularized_SVD_LDA,Baseline,CV_F1,0.7571
+M1-T7,O3_LogReg_SVD_LDA_PCA_Balanced,Optimized,CV_F1,0.7654

@@ -1,0 +1,7 @@
+Task,Model_Name,Stage,CV_MAE_Mean,CV_RMSE_Mean,CV_RMSE_Std,CV_R2_Mean,Val_MAE,Val_MSE,Val_RMSE,Val_R2,Train_Time_Sec
+Task A - Regression (ADR),B1_LinearRegression_Baseline,Baseline,14.5932,20.7084,0.267,0.6951,14.3131,399.7445,19.9936,0.71,7.68
+Task A - Regression (ADR),B2_RandomForest_Baseline,Baseline,5.9072,12.7491,0.3325,0.8844,5.2808,123.4903,11.1126,0.9104,158.55
+Task A - Regression (ADR),B3_XGBoost_Baseline,Baseline,7.7771,13.3199,0.274,0.8739,7.5301,147.3734,12.1397,0.8931,7.4
+Task A - Regression (ADR),O1_ElasticNet_LogTarget_Optimized,Optimized,20.9735,29.7063,0.3058,0.3726,20.8081,856.4667,29.2655,0.3786,4.52
+Task A - Regression (ADR),O2_RandomForest_Tuned,Optimized,6.2426,12.7935,0.3412,0.8836,5.6098,123.4246,11.1097,0.9105,206.08
+Task A - Regression (ADR),O3_XGBoost_Tuned,Optimized,6.7755,12.3618,0.2681,0.8914,6.4169,118.3645,10.8795,0.9141,26.96

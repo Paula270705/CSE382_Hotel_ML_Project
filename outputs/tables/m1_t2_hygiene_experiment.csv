@@ -1,0 +1,7 @@
+Task_ID,Model,Role,Metric,Score
+M1-T2,B1_LinearReg_Raw_Unfiltered,Baseline,CV_RMSE,33.9363
+M1-T2,O1_HuberReg_Filtered_Winsorized,Optimized,CV_RMSE,32.0227
+M1-T2,B2_GaussianNB_Raw_Skewed,Baseline,CV_ROC_AUC,0.7455
+M1-T2,O2_GaussianNB_YeoJohnson_Indicators,Optimized,CV_ROC_AUC,0.7578
+M1-T2,B3_KMeans_Raw_MinMaxScaler,Baseline,Silhouette_Score,0.305
+M1-T2,O3_KMeans_Log1p_RobustScaler,Optimized,Silhouette_Score,0.2448

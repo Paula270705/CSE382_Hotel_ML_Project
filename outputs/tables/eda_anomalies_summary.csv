@@ -1,0 +1,2 @@
+Total_Rows,Exact_Duplicate_Rows,Zero_Total_Guests_Rows,Zero_Total_Nights_Rows,NonPositive_ADR_Rows,Extreme_ADR_GT_1000_Rows,Children_NA_Count,Country_NULL_Count,Agent_NULL_Count,Company_NULL_Count
+79330,25902,167,331,1208,1,4,24,8131,75641
