@@ -1,0 +1,51 @@
+project_name: "CSE382_City_Hotel_ML_System"
+seed: 42
+
+paths:
+  raw_data: "data/raw/H2.csv"
+  splits_dir: "data/splits"
+  artifacts_dir: "artifacts"
+  tables_dir: "outputs/tables"
+  figures_dir: "outputs/figures"
+
+split:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  cv_folds: 5
+  allow_test_unlock: false
+
+targets:
+  regression: "ADR"
+  classification: "IsCanceled"
+
+leakage_policy:
+  direct_leakage_columns:
+    - "ReservationStatus"
+    - "ReservationStatusDate"
+  indirect_lifecycle_columns:
+    - "AssignedRoomType"
+    - "BookingChanges"
+    - "DaysInWaitingList"
+  regression_excluded:
+    - "ADR"
+    - "IsCanceled"
+    - "ReservationStatus"
+    - "ReservationStatusDate"
+    - "AssignedRoomType"
+    - "BookingChanges"
+    - "DaysInWaitingList"
+  classification_excluded:
+    - "IsCanceled"
+    - "ReservationStatus"
+    - "ReservationStatusDate"
+    - "AssignedRoomType"
+    - "BookingChanges"
+    - "DaysInWaitingList"
+  clustering_excluded:
+    - "IsCanceled"
+    - "ReservationStatus"
+    - "ReservationStatusDate"
+    - "AssignedRoomType"
+    - "Agent"
+    - "Company"
