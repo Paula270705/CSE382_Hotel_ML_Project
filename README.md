@@ -6,7 +6,8 @@
 3. **Fares Ashraf Taha Taha Gomaa** — ID: `23P0384`
 4. **Mariam Gaber Mousa Soliman** — ID: `23P0397`
 5. **John Ashraf Fouad Mikhael Gerges** — ID: `24P0355`
-
+6. **Mohamed ahmed mostafa** — ID: `23P0202`
+   
 ## Repository Details:
 - **GitHub Repository URL**: `https://github.com/Paula270705/CSE382_Hotel_ML_Project`
 - **Milestone**: Milestone 1 Submission
